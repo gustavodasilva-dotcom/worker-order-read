@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Worker.Order.Read.Repository;
+using Worker.Order.Read.Repository.Interfaces;
+using Worker.Order.Read.Service;
+using Worker.Order.Read.Service.Interfaces;
 
 namespace Worker.Order.Read.SendToProduction
 {
@@ -18,6 +18,9 @@ namespace Worker.Order.Read.SendToProduction
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
+                    services.AddSingleton<IOrderRepository, OrderRepository>();
+                    services.AddSingleton<IOrderService, OrderService>();
+
                     services.AddHostedService<Worker>();
                 });
     }

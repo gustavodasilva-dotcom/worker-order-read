@@ -15,3 +15,5 @@ C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debu
 C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.csproj.CopyComplete
 C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Entity.dll
 C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Entity.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Models.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Models.pdb

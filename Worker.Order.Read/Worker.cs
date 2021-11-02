@@ -38,8 +38,7 @@ namespace Worker.Order.Read
 
                         if (order != null)
                         {
-                            if (_readService.CheckRead(order, logRead))
-                                _readService.InsertRead(order, logRead);
+                            _readService.InsertRead(order, logRead);
 
                             _fileService.MoveFile();
                         }

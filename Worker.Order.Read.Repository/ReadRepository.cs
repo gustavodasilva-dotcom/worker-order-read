@@ -118,10 +118,5 @@ namespace Worker.Order.Read.Repository
 
             #endregion SQL
         }
-
-        public bool OrderNumberExists(int orderNumber)
-        {
-            return false;
-        }
     }
 }

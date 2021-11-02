@@ -8,25 +8,9 @@ namespace Worker.Order.Read.Service
     {
         private readonly IReadRepository _readRepository;
 
-        private readonly ILogsRepository _logsRepository;
-
-        public ReadService(IReadRepository readRepository, ILogsRepository logsRepository)
+        public ReadService(IReadRepository readRepository)
         {
             _readRepository = readRepository;
-
-            _logsRepository = logsRepository;
-        }
-
-        public bool CheckRead(Entity.Order order, int logRead)
-        {
-            if (_readRepository.OrderNumberExists(order.OrderNumber))
-            {
-                _logsRepository.LogRead("oi", logRead);
-
-                return false;
-            }
-
-            return true;
         }
 
         public void InsertRead(Entity.Order order, int logRead)

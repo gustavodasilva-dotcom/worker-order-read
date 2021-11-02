@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RfUR6tLW2yHODrp5x4LU5KBO7nwN3HPuHWIicANHGkOiei+xXtgFge8kFDPlWY97AKvDpFllxEZyCZzzfKmbVQ==",
+  "dgSpecHash": "ynssmFrpdWu+nMC6N+bcIIzZTkNQjYzYTH+p82F/2hiO4BG/9QZp8g5KLPX6umnUJ4R/XcpQ4Dk/akFlTh3mrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gusta\\source\\repos\\Worker.Order.Read\\Worker.Order.Read\\Worker.Order.Read.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gusta\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",

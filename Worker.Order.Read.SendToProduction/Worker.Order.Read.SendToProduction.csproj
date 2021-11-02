@@ -8,4 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Worker.Order.Read.Repository\Worker.Order.Read.Repository.csproj" />
+    <ProjectReference Include="..\Worker.Order.Read.Service\Worker.Order.Read.Service.csproj" />
+  </ItemGroup>
 </Project>

@@ -15,6 +15,14 @@
           "Worker.Order.Read.Service.dll": {}
         }
       },
+      "Dapper/2.0.90": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.90.36046"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "5.0.0"
@@ -217,12 +225,19 @@
           "Worker.Order.Read.Entity.dll": {}
         }
       },
+      "Worker.Order.Read.Models/1.0.0": {
+        "runtime": {
+          "Worker.Order.Read.Models.dll": {}
+        }
+      },
       "Worker.Order.Read.Repository/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.90",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "System.Configuration.ConfigurationManager": "5.0.0",
           "System.Data.SqlClient": "4.8.3",
-          "Worker.Order.Read.Entity": "1.0.0"
+          "Worker.Order.Read.Entity": "1.0.0",
+          "Worker.Order.Read.Models": "1.0.0"
         },
         "runtime": {
           "Worker.Order.Read.Repository.dll": {}
@@ -235,6 +250,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dapper/2.0.90": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e4YjOLJptnpwHIbP8HxjaYf7So9lhUC43rvvGMEkH4Q4CiVlm4rOxYDo0HyuHlMQKj0U5Ob/nCMm52TUhTaZQg==",
+      "path": "dapper/2.0.90",
+      "hashPath": "dapper.2.0.90.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
       "type": "package",
@@ -356,6 +378,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Worker.Order.Read.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Worker.Order.Read.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
