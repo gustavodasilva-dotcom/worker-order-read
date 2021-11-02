@@ -1,0 +1,17 @@
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Service.deps.json
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Service.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\ref\Worker.Order.Read.Service.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Service.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.csproj.AssemblyReference.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.AssemblyInfoInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.AssemblyInfo.cs
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.csproj.CoreCompileInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\ref\Worker.Order.Read.Service.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Repository.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Repository.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\obj\Debug\net5.0\Worker.Order.Read.Service.csproj.CopyComplete
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Service\bin\Debug\net5.0\Worker.Order.Read.Entity.pdb

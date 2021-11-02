@@ -1,0 +1,12 @@
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\bin\Debug\net5.0\Worker.Order.Read.Entity.deps.json
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\bin\Debug\net5.0\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\bin\Debug\net5.0\ref\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\bin\Debug\net5.0\Worker.Order.Read.Entity.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.csproj.AssemblyReference.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.AssemblyInfoInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.AssemblyInfo.cs
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.csproj.CoreCompileInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\ref\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Entity\obj\Debug\net5.0\Worker.Order.Read.Entity.pdb

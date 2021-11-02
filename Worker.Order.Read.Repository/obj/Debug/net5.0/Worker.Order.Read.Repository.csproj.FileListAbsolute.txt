@@ -1,0 +1,15 @@
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\Worker.Order.Read.Repository.deps.json
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\Worker.Order.Read.Repository.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\ref\Worker.Order.Read.Repository.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\Worker.Order.Read.Repository.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.csproj.AssemblyReference.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.AssemblyInfoInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.AssemblyInfo.cs
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.csproj.CoreCompileInputs.cache
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\ref\Worker.Order.Read.Repository.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\Worker.Order.Read.Entity.dll
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\bin\Debug\net5.0\Worker.Order.Read.Entity.pdb
+C:\Users\gusta\source\repos\Worker.Order.Read\Worker.Order.Read.Repository\obj\Debug\net5.0\Worker.Order.Read.Repository.csproj.CopyComplete
