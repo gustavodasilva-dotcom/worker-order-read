@@ -5,6 +5,8 @@ namespace Worker.Order.Read.Entity
 {
     public class Order
     {
+        public int PreOrderID { get; set; }
+
         public int OrderNumber { get; set; }
 
         public DateTime OrderDate { get; set; }

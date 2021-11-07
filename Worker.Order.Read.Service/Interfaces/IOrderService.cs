@@ -1,11 +1,15 @@
-﻿using System.Data;
-
-namespace Worker.Order.Read.Service.Interfaces
+﻿namespace Worker.Order.Read.Service.Interfaces
 {
     public interface IOrderService
     {
         bool CheckPendingOrders();
 
-        void GetNextPendingOrder();
+        Worker.Order.Read.Entity.Order GetNextPendingOrder();
+
+        bool OrderNumberExists(Worker.Order.Read.Entity.Order order);
+
+        void ProcessOrder(Worker.Order.Read.Entity.Order order);
+
+        void DeactivatePreOrder(int preOrderID);
     }
 }

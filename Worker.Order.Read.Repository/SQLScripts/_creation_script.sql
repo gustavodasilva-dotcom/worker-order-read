@@ -79,3 +79,75 @@ CREATE TABLE Worker_Order_Pre_Order_Items_Read
 	CONSTRAINT FK_Pre_Order_Pre_Order_Items_Read FOREIGN KEY(Pre_Order_Read_ID)
 	REFERENCES Worker_Order_Pre_Order_Read(Pre_Order_Read_ID)
 );
+
+DROP TABLE IF EXISTS Worker_Order_Shipping_Address
+CREATE TABLE Worker_Order_Shipping_Address
+(
+	 Shipping_Address_ID		INT				NOT NULL IDENTITY(10000000, 1)
+	,Shipping_Address_Name		VARCHAR(200)	NOT NULL
+	,Shipping_Address_Street	VARCHAR(200)	NOT NULL
+	,Shipping_Address_City		VARCHAR(200)	NOT NULL
+	,Shipping_Address_State		VARCHAR(200)	NOT NULL
+	,Shipping_Address_Zip		VARCHAR(50)		NOT NULL
+	,Shipping_Address_Country	VARCHAR(200)	NOT NULL
+	,Insert_Date				DATETIME		NOT NULL
+	,Active						BIT				NOT NULL
+
+	CONSTRAINT PK_Shipping_Address_ID PRIMARY KEY(Shipping_Address_ID)
+);
+
+DROP TABLE IF EXISTS Worker_Order_Billing_Address
+CREATE TABLE Worker_Order_Billing_Address
+(
+	 Billing_Address_ID			INT				NOT NULL IDENTITY(10000000, 1)
+	,Billing_Address_Name		VARCHAR(200)	NOT NULL
+	,Billing_Address_Street		VARCHAR(200)	NOT NULL
+	,Billing_Address_City		VARCHAR(200)	NOT NULL
+	,Billing_Address_State		VARCHAR(200)	NOT NULL
+	,Billing_Address_Zip		VARCHAR(50)		NOT NULL
+	,Billing_Address_Country	VARCHAR(200)	NOT NULL
+	,Insert_Date				DATETIME		NOT NULL
+	,Active						BIT				NOT NULL
+
+	CONSTRAINT PK_Billing_Address_ID PRIMARY KEY(Billing_Address_ID)
+);
+
+DROP TABLE IF EXISTS Worker_Order
+CREATE TABLE Worker_Order
+(
+	 Order_ID					INT				NOT NULL IDENTITY(10000000, 1)
+	,Order_Number				VARCHAR(200)	NOT NULL
+	,Order_Date					DATETIME		NOT NULL
+	,Order_Shipping_Address_ID	INT				NOT NULL
+	,Order_Billing_Address_ID	INT				NOT NULL
+	,Order_Delivery_Notes		VARCHAR(200)	NOT NULL
+	,Insert_Date				DATETIME		NOT NULL
+	,Active						BIT				NOT NULL
+
+	CONSTRAINT PK_Order_ID PRIMARY KEY(Order_ID)
+
+	CONSTRAINT FK_Order_Shipping_Address_ID FOREIGN KEY (Order_Shipping_Address_ID)
+	REFERENCES Worker_Order_Shipping_Address(Shipping_Address_ID),
+
+	CONSTRAINT FK_Order_Billing_Address_ID FOREIGN KEY (Order_Billing_Address_ID)
+	REFERENCES Worker_Order_Billing_Address(Billing_Address_ID)
+);
+
+DROP TABLE IF EXISTS Worker_Order_Item
+CREATE TABLE Worker_Order_Item
+(
+	 Order_Item_ID 				INT				NOT NULL IDENTITY(10000000, 1)
+	,Order_Item_Part_Number		VARCHAR(200)
+	,Order_Item_Product_Name	VARCHAR(200)	NOT NULL
+	,Order_Item_Quantity		INT				NOT NULL
+	,Order_Item_Price			MONEY			NOT NULL
+	,Order_Item_Comment			VARCHAR(200)	NOT NULL
+	,Order_ID					INT				NOT NULL
+	,Insert_Date				DATETIME		NOT NULL
+	,Active						BIT				NOT NULL
+
+	CONSTRAINT PK_Order_Item_ID PRIMARY KEY(Order_Item_ID)
+
+	CONSTRAINT FK_Order_ID FOREIGN KEY (Order_ID)
+	REFERENCES Worker_Order(Order_ID)
+);

@@ -28,7 +28,27 @@ namespace Worker.Order.Read.SendToProduction
                 {
                     if (_orderService.CheckPendingOrders())
                     {
-                        _orderService.GetNextPendingOrder();
+                        var order = _orderService.GetNextPendingOrder();
+
+                        if (order != null)
+                        {
+                            _logger.LogInformation("Processing order no {0}.", order.OrderNumber);
+
+                            if (!_orderService.OrderNumberExists(order))
+                            {
+                                _orderService.ProcessOrder(order);
+                            }
+                            else
+                            {
+                                _logger.LogInformation("There is already a processed order {0}.", order.OrderNumber);
+
+                                _orderService.DeactivatePreOrder(order.PreOrderID);
+                            }
+                        }
+                        else
+                        {
+                            _logger.LogInformation("There isn't pending orders.");
+                        }
                     }
                 }
                 catch (Exception e)
@@ -38,7 +58,7 @@ namespace Worker.Order.Read.SendToProduction
                 finally
                 {
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                    await Task.Delay(1000, stoppingToken);
+                    await Task.Delay(10000, stoppingToken);
                 }
             }
         }
