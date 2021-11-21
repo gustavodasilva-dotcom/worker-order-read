@@ -34,13 +34,13 @@ namespace Worker.Order.Read
 
                     if (logRead != 0)
                     {
-                        var order = _fileService.ReadFile();
+                        var order = _fileService.ReadFile(logRead);
 
                         if (order != null)
                         {
                             _readService.InsertRead(order, logRead);
 
-                            _fileService.MoveFile();
+                            _fileService.MoveFile(false);
                         }
                     }       
                 }

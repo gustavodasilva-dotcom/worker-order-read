@@ -16,13 +16,17 @@ namespace Worker.Order.Read.Service
 
         private readonly string FileReadPath;
 
+        private readonly string FileErrorPath;
+
         private readonly ILogsRepository _logsRepository;
 
         public FileService(ILogsRepository logsRepository)
         {
-            FilePath = @"C:\XMLFiles\";
+            FilePath = @"C:\XMLFiles\NEW\";
 
-            FileReadPath = @"C:\XMLFiles\Processados\";
+            FileReadPath = @"C:\XMLFiles\PROCESSED\";
+
+            FileErrorPath = @"C:\XMLFiles\ERROR\";
 
             _logsRepository = logsRepository;
         }
@@ -49,7 +53,7 @@ namespace Worker.Order.Read.Service
             }
         }
 
-        public Entity.Order ReadFile()
+        public Entity.Order ReadFile(int logRead)
         {
             try
             {
@@ -57,6 +61,8 @@ namespace Worker.Order.Read.Service
 
                 foreach (string file in Directory.GetFiles(FilePath, "*.xml"))
                 {
+                    CurrentFile = file;
+
                     Address addressShipping = null;
                     Address addressBilling = null;
                     var items = new List<Item>();
@@ -176,27 +182,42 @@ namespace Worker.Order.Read.Service
                         order.Billing = addressBilling;
                         order.Items = items;
 
-                        CurrentFile = file;
+                        //CurrentFile = file;
                     }
                 }
 
                 return order;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                MoveFile(true);
+
+                _logsRepository.LogRead(e.Message.Replace("'", ""), logRead);
+
                 throw;
             }
         }
 
-        public void MoveFile()
+        public void MoveFile(bool isError)
         {
             try
             {
-                string fileNameOrigin = CurrentFile.Split("\\").GetValue(2).ToString();
+                if (!isError)
+                {
+                    string fileNameOrigin = CurrentFile.Split("\\").GetValue(3).ToString();
 
-                var fileName = fileNameOrigin + "." + Convert.ToString(DateTime.Now.ToString("yyyy''MM''dd'T'HH''mm''ss"));
+                    var fileName = fileNameOrigin + "." + Convert.ToString(DateTime.Now.ToString("yyyy''MM''dd'T'HH''mm''ss"));
 
-                File.Move(CurrentFile, Path.Combine(FileReadPath, fileName));
+                    File.Move(CurrentFile, Path.Combine(FileReadPath, fileName));
+                }
+                else
+                {
+                    string fileNameOrigin = CurrentFile.Split("\\").GetValue(3).ToString();
+
+                    var fileName = fileNameOrigin + "." + Convert.ToString(DateTime.Now.ToString("yyyy''MM''dd'T'HH''mm''ss"));
+
+                    File.Move(CurrentFile, Path.Combine(FileErrorPath, fileName));
+                }
             }
             catch (Exception)
             {

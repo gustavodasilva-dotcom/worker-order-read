@@ -61,7 +61,7 @@ namespace Worker.Order.Read.Repository
         {
             #region SQL
 
-            var query = $@"INSERT INTO Worker_Order_Read_Log VALUES ('{message}', {logRead}, GETDATE()), 1;";
+            var query = $@"INSERT INTO Worker_Order_Read_Log VALUES ('{message}', {logRead}, GETDATE(), 1);";
 
             var command = new SqlCommand(query, sqlConnection)
             {

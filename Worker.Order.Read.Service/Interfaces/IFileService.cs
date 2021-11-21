@@ -4,8 +4,8 @@
     {
         int CheckFile();
 
-        Entity.Order ReadFile();
+        Entity.Order ReadFile(int logRead);
 
-        void MoveFile();
+        void MoveFile(bool isError);
     }
 }
